@@ -2,7 +2,7 @@
 
 用 Python 实现的命令行编程 Agent，支持代码检索、文件编辑、测试执行和多轮工具调用，重点处理长任务中的上下文增长、会话中断恢复、记忆复用与工具权限控制。
 
-主入口为交互式 coding，另提供独立任务副本与 Docker bugfix 流程。核心循环和树形会话参考 Pi，bugfix 命令执行方式参考 mini-swe-agent。
+主入口为交互式 coding，另提供独立任务副本与 Docker bugfix 流程。核心循环和树形会话参考 Pi，bugfix 命令执行方式参考 mini-swe-agent,记忆和权限管理参考claude code。
 
 ## 功能
 
