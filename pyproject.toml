@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "forgepilot"
+version = "0.1.0"
+description = "CLI coding agent with resumable sessions, layered context, memory and controlled tool execution"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pydantic>=2,<3",
+    "openai>=1,<3",
+    "python-dotenv>=1,<2",
+    "PyYAML>=6,<7",
+    "filelock>=3.16,<4",
+    "tree-sitter>=0.25,<0.26",
+    "tree-sitter-bash>=0.25,<0.26",
+]
+
+[project.scripts]
+forgepilot = "forgepilot.cli.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["forgepilot*"]
+

@@ -1,0 +1,29 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.idea/
+.forgepilot/
+
+# 本地工作区与个人文件
+.local/
+/demo/
+/demo_workspace/
+/demo_skill_workspace/
+/output/
+/tmp/
+
+# 构建与检查缓存
+*.egg-info/
+/build/
+/dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.log
+.DS_Store
+Thumbs.db
